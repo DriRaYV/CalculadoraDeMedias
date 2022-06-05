@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/calculadora.png" type="image/x-icon">
+    <title>Média Aritmetica</title>
+</head>
+<body>
+    <h2 id="h2-artitmrtica">Calculando Médias Aritméticas</h2>
+
+    <p id="aritmetica-1">Descubra facilmente a média aritmética ou a média de um conjunto de números com esta simples calculadora matemática online.</p> 
+
+    <div id="calc-1">
+        <input type="number" class="estilo-medias" id="media_1" placeholder="insira o primeiro número">
+        <input type="number" class="estilo-medias" id="media_2" placeholder="insira o segundo número">
+        <input type="number" class="estilo-medias" id="media_3" placeholder="insira o terceiro número">
+        <input type="number" class="estilo-medias" id="media_4" placeholder="insira o quarto número">
+        <input type="number" class="estilo-medias" id="media_5" placeholder="insira o quinto número">
+        <input type="number" class="estilo-medias" id="media_6" placeholder="insira o sexto número">
+
+        <button  onclick="contaArit()" class="botoes">Calcular</button>
+            <select onchange="location.href=this.value">
+                <option value="#">Selecione</option>
+                <option value="http://127.0.0.1:5500/index.html" id="index" class="botoes">Início</option>
+                <option value="http://127.0.0.1:5500/Ponderada.html" id="ponderada" class="botoes">Ponderada</option>
+
+               </select>
+    </div>
+
+    <p class="p_1">Obs: máximo de 6 números | Caso não haja um número insira o número 0 </p>
+    <div id="div-result">
+        <h3 id="resultado-aritmetica-2">Resultado</h3>
+    </div>
+    
+    
+    <footer><p>&copy Made by Rafaella Guimarães Venturini | MIT liscence </p></footer>
+
+        <script>
+            let num1 = document.querySelector('#media_1')
+            let num2 = document.querySelector('#media_2')
+            let num3 = document.querySelector('#media_3')
+            let num4 = document.querySelector('#media_4')
+            let num5 = document.querySelector('#media_5')
+            let num6 = document.querySelector('#media_6')
+            let resultado = document.querySelector('#resultado-aritmetica-2')
+            
+            function contaArit(){
+                resultado.innerHTML = (parseFloat(num1.value) + parseFloat(num2.value) + parseFloat(num3.value) + parseFloat(num4.value) + parseFloat(num5.value) + parseFloat(num6.value)) / 6
+            }
+            
+            
+                </script>
+
+</body>
+</html>

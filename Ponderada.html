@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/calculadora.png" type="image/x-icon">
+    <title>Ponderada</title>
+</head>
+<body>
+    <h2 id="h2-artitmrtica">Calculando Médias Ponderadas</h2>
+
+    <p id="aritmetica-1">Descubra facilmente a média ponderada ou a média de um conjunto de números com esta simples calculadora matemática online.</p> 
+
+    <div id="calc-1">
+        <input type="number" class="estilo-medias" id="media_1" placeholder="insira a primeira média"> 
+        <input type="number" class="estilo-medias" id="ponderada_1" placeholder="insira o primeiro peso" >
+        <input type="number" class="estilo-medias" id="media_2" placeholder="insira a segunda média">
+        <input type="number" class="estilo-medias" id="ponderada_2" placeholder="insira o segundo peso" >
+        <input type="number" class="estilo-medias" id="media_3" placeholder="insira a terceira média">
+        <input type="number" class="estilo-medias" id="ponderada_3" placeholder="insira o terceiro peso" >
+
+        <button  onclick="contaPond()">Calcular</button>
+        <select onchange="location.href=this.value">
+            <option value="#">Selecione</option>
+            <option value="http://127.0.0.1:5500/index.html" id="optionindex" >Inicio</option>
+            <option value="http://127.0.0.1:5500/Aritmetica.html" id="optionindex" class="botoes" >Aritmetica</option>
+
+           </select>
+
+    </div>
+
+    <p class="p_1">Obs: máximo de 3 médias e 3 pesos | Caso não haja um peso ou uma média insira o número 0 </p>
+    <div id="div-result">
+        <h3 id="resultado-aritmetica-2">Resultado</h3>
+    </div>
+    <footer><p>&copy Made by Rafaella Guimarães Venturini | MIT liscence </p></footer>
+    
+
+        <script>
+            let num1 = document.querySelector('#media_1')
+
+            let num2 = document.querySelector('#media_2')
+
+            let num3 = document.querySelector('#media_3')
+
+            let ponderada1 = document.querySelector('#ponderada_1')
+
+            let ponderada2 = document.querySelector('#ponderada_2')
+
+            let ponderada3 = document.querySelector('#ponderada_3')
+            
+            let resultado = document.querySelector('#resultado-aritmetica-2')
+            
+            function contaPond(){
+
+                resultado.innerHTML = ((parseFloat(num1.value) * parseFloat(ponderada1.value)) + (parseFloat(num2.value) * parseFloat(ponderada2.value)) + (parseFloat(num3.value) * parseFloat(ponderada3.value))) / (parseInt(ponderada1.value) + parseInt(ponderada2.value) + parseInt(ponderada3.value))
+
+                
+            }
+            
+            
+                </script>
+
+</body>
+</html>

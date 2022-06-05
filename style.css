@@ -1,0 +1,79 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+body{
+    background-color: rgb(232, 241, 250);
+}
+
+#calc-1{
+    background-color: rgb(53, 55, 83);
+
+}
+.estilo-medias{
+    background-color: rgb(231, 242, 247);
+    border: solid rgb(43, 44, 68) 1px;
+    margin:0.5%;
+
+    width: 12%;
+}
+
+.botoes{
+    color: rgb(38, 38, 70);
+    background-color: rgb(207, 212, 219);
+    border: solid rgb(255, 255, 255) 1px;
+    width: 8%;
+    cursor: pointer;
+
+}
+
+h1{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(50, 50, 73);
+}
+
+#h2-artitmrtica{
+    text-align: center;
+    font-family: 'Montserrat', Courier, monospace;
+    font-size:large;
+    margin: 3%;
+}
+
+#aritmetica-1{
+    font-family: 'Montserrat', Courier, monospace;
+}
+
+#slect_1{
+    margin: 3% 30%;
+    width: 40%;
+}
+
+.p_1{text-align: center;
+    font-family: 'Montserrat', Courier, monospace;
+    font-size:large;
+}
+
+
+#resultado-aritmetica-2{
+
+    font-size: 3rem;
+    font-family: 'Montserrat', Courier, monospace;
+    margin: 5%;
+    text-align:center;
+    color: rgb(34, 34, 51);;
+}
+
+footer{
+    font-size: 0.80rem;
+    font-family: 'Montserrat', Courier, monospace;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+
+}
+
+
